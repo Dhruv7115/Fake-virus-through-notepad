@@ -1,0 +1,129 @@
+X = MsgBox("Your System Can't be accessed anymore, it is corrupted",0+16,"Fatal Error")
+X = MsgBox("Some Malware is trying to sniff into your data, do you want to stop it?",48+3,"Warning")
+X = MsgBox("The Malware can't be stopped",0+16,"Unable to Stop")
+dim speechobject
+
+set speechobject=createobject("sapi.spvoice")
+speechobject.speak "Attention! Your computer is being hacked"
+
+WScript.Sleep 10
+WScript.Sleep 10
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.Run "notepad"
+WScript.Sleep 10
+WshShell.AppActivate "Notepad"
+WScript.Sleep 500
+WshShell.SendKeys "Hel"
+WScript.Sleep 500
+WshShell.SendKeys "lo "
+WScript.Sleep 500
+WshShell.SendKeys ", ho"
+WScript.Sleep 500
+WshShell.SendKeys "w a"
+WScript.Sleep 500
+WshShell.SendKeys "re "
+WScript.Sleep 500
+WshShell.SendKeys "you"
+WScript.Sleep 500
+WshShell.SendKeys "? "
+WScript.Sleep 500
+WshShell.SendKeys "Th"
+WScript.Sleep 500
+WshShell.SendKeys "is"
+WScript.Sleep 500
+WshShell.SendKeys " comp"
+WScript.Sleep 500
+WshShell.SendKeys "uter"
+WScript.Sleep 500
+WshShell.SendKeys " is"
+WScript.Sleep 500
+WshShell.SendKeys " now "
+WScript.Sleep 500
+WshShell.SendKeys "hacked "
+WScript.Sleep 500
+WshShell.SendKeys "my name "
+WScript.Sleep 500
+WshShell.SendKeys "is.. "
+WScript.Sleep 500
+WshShell.SendKeys "try "
+WScript.Sleep 500
+WshShell.SendKeys "to "
+WScript.Sleep 500
+WshShell.SendKeys "fi"
+WScript.Sleep 500
+WshShell.SendKeys "nd "
+WScript.Sleep 500
+WshShell.SendKeys "out "
+Dim j
+j=0
+
+Set oWMP = CreateObject("WMPlayer.OCX.7")
+Set colCDROMs = oWMP.cdromCollection
+do
+if colCDROMs.Count >= 1 then
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+For i = 0 to colCDROMs.Count - 1
+colCDROMs.Item(i).Eject
+Next
+End If
+if j=0 then
+WScript.Sleep 10
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.Run "notepad"
+WScript.Sleep 10
+WshShell.AppActivate "Notepad"
+WScript.Sleep 500
+WshShell.SendKeys "Its "
+WScript.Sleep 500
+WshShell.SendKeys "me "
+WScript.Sleep 500
+WshShell.SendKeys "who "
+WScript.Sleep 500
+WshShell.SendKeys "ope"
+WScript.Sleep 500
+WshShell.SendKeys "ned "
+WScript.Sleep 500
+WshShell.SendKeys "your "
+WScript.Sleep 500
+WshShell.SendKeys "CD "
+WScript.Sleep 500
+WshShell.SendKeys "tray "
+End If
+
+if j=1 then
+WScript.Sleep 10
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.Run "notepad"
+WScript.Sleep 10
+WshShell.AppActivate "Notepad"
+WScript.Sleep 500
+WshShell.SendKeys "don't "
+WScript.Sleep 500
+WshShell.SendKeys "try "
+WScript.Sleep 500
+WshShell.SendKeys "to "
+WScript.Sleep 500
+WshShell.SendKeys "close"
+WScript.Sleep 500
+WshShell.SendKeys "it, "
+WScript.Sleep 500
+WshShell.SendKeys "I "
+WScript.Sleep 500
+WshShell.SendKeys "will "
+WScript.Sleep 500
+WshShell.SendKeys "open "
+WScript.Sleep 500
+WshShell.SendKeys "it "
+WScript.Sleep 500
+WshShell.SendKeys "again "
+WScript.Sleep 500
+WshShell.SendKeys "and "
+WScript.Sleep 500
+WshShell.SendKeys "again "
+End If
+j=j+1
+
+loop
+
